@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./Styles/App.scss";
 import Home from "./Components/Home";
 import Works from "./Components/Works";
 import Contact from "./Components/Contact";

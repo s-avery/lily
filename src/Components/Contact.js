@@ -16,8 +16,9 @@ const Contact = () => {
 
 				<div className="contact__form">
 					<p>
-						If you have any questions about my work, please use the
-						form below.
+						The best way to get in touch is through this form. I’ll
+						try to get back to you within a week, but sometimes take
+						longer.
 					</p>
 					<iframe
 						src="https://docs.google.com/forms/d/e/1FAIpQLSecaknMnVD03p2U7etrIgxcHs6DJaSu1yeIlmtVsayjQaexiQ/viewform?embedded=true"
