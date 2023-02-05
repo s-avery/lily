@@ -1,5 +1,4 @@
 import Header from "./Header";
-import Footer from "./Footer";
 import placeholder from "../Assets/placeholder.png";
 
 const Works = () => {
@@ -54,8 +53,6 @@ const Works = () => {
 					</div>
 				</div>
 			</main>
-
-			<Footer />
 		</>
 	);
 };

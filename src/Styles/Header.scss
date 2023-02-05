@@ -1,0 +1,19 @@
+header {
+	display: flex;
+	// justify-content: space-between;
+
+	nav {
+		position: absolute;
+
+		ul {
+			list-style: none;
+			display: flex;
+			padding-left: 2%;
+		}
+	}
+
+	h2 {
+		margin: 1.2rem auto 10vh auto;
+		text-align: center;
+	}
+}

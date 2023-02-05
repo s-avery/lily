@@ -4,8 +4,8 @@ import { faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
 	return (
 		<footer>
-			<div class="footer__text">
-				<p>Lily Alexandre</p>
+			{/* <div class="footer__text">
+				<h4>Lily Alexandre</h4>
 			</div>
 			<div class="footer__links">
 				<a
@@ -22,7 +22,7 @@ const Footer = () => {
 				>
 					<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
 				</a>
-			</div>
+			</div> */}
 		</footer>
 	);
 };

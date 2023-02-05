@@ -1,3 +1,16 @@
 body {
 	background-color: $lavender;
 }
+
+// *Buttons
+.button {
+	text-decoration: none;
+	color: $dark;
+	padding: 10px;
+	border-radius: 4px;
+	transition: 300ms;
+
+	&:hover {
+		background-color: $orange;
+	}
+}

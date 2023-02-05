@@ -6,20 +6,27 @@ import Contact from "./Contact";
 const Header = () => {
 	return (
 		<header>
-			<h1>Lily Alexandre</h1>
 			<nav>
 				<ul>
 					<li>
-						<Link to="/">Home</Link>
+						<Link to="/" className="button">
+							Home
+						</Link>
 					</li>
 					<li>
-						<Link to="/Works">Works</Link>
+						<Link to="/Works" className="button">
+							Works
+						</Link>
 					</li>
 					<li>
-						<Link to="/Contact">Contact</Link>
+						<Link to="/Contact" className="button">
+							Contact
+						</Link>
 					</li>
 				</ul>
 			</nav>
+
+			<h2>Lily Alexandre</h2>
 		</header>
 	);
 };

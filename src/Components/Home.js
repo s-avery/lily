@@ -1,22 +1,22 @@
-import placeholder from "../Assets/placeholder.png";
+import headshot from "../Assets/headshot.jpeg";
 import Header from "./Header";
-import Footer from "./Footer";
 
 const Home = () => {
 	return (
 		<>
 			<Header />
 
-			<main>
-				<div class="home__image">
-					<img src="./placeholder.png" alt="Lily Alexandre" />
-				</div>
-				<div class="home__bio">
-					<h2>Lily Alexandre</h2>
+			<main className="home">
+				<div className="home__bio">
 					<div className="home__bioImage">
-						<img src={placeholder} alt="" />
+						<img
+							src={headshot}
+							alt="Lily Alexandre smiling in a black cardigan standing among trees."
+						/>
 					</div>
 					<div className="home__about">
+						<h1>Lily Alexandre</h1>
+
 						<p>
 							According to all known laws of aviation, there is no
 							way that a bee should be able to fly. Its wings are
@@ -28,7 +28,20 @@ const Home = () => {
 				</div>
 			</main>
 
-			<Footer />
+			<footer>
+				<p>
+					website by{" "}
+					<a
+						className="button"
+						href="https://sadie-avery.netlify.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{" "}
+						sadie avery
+					</a>
+				</p>
+			</footer>
 		</>
 	);
 };

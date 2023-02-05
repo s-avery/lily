@@ -1,0 +1,23 @@
+.home {
+	&__bio {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__bioImage {
+		margin-left: 5%;
+		margin-right: 5%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	h1 {
+		margin-top: 3%;
+	}
+
+	&__about {
+		padding-right: 10%;
+	}
+}
