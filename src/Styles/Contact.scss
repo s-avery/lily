@@ -7,4 +7,24 @@
 		display: flex;
 		justify-content: space-evenly;
 	}
+
+	&__form {
+		max-width: 640px;
+	}
+
+	&__googleFormContainer {
+		overflow: hidden;
+	}
+	&__googleForm {
+		position: relative;
+		z-index: -1;
+		transition: 0.7s ease-out;
+		overflow: hidden;
+		left: -30px;
+
+		// animation toggle
+		&--animation {
+			transform: translateY(-1000px);
+		}
+	}
 }
