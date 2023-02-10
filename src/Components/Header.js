@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import Home from "./Home";
-import Works from "./Works";
-import Contact from "./Contact";
 
 const Header = () => {
 	return (

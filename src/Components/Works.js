@@ -15,7 +15,7 @@ const Works = () => {
 						<a href="https://youtu.be/aLmgMjkOv7Q">
 							<img
 								src={essay}
-								alt="The thumbnail for Lily's Video 'Zoopraxography for Lovers (Cinema’s First Kiss Was Between Two Women)'. Sepia image of kissing against a background of the ocean, with text reading 'Who were they?'"
+								alt="The thumbnail for Lily's Video 'Zoopraxography for Lovers (Cinema’s First Kiss Was Between Two Women)'. Sepia cutout of kissing against a background of the ocean, with text reading 'Who were they?'"
 							/>
 						</a>
 					</div>
