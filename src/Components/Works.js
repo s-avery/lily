@@ -8,11 +8,18 @@ const Works = () => {
 		<>
 			<Header />
 
-			<main>
+			<main className="works">
+				<h2 className="hits">The Hits</h2>
 				<div className="works__eyecatchers">
-					<h2>The Hits</h2>
 					<div className="works__thumbnail">
-						<a href="https://youtu.be/aLmgMjkOv7Q">
+						<p className="works__eyecatcherTitle">
+							Zoopraxography for Lovers
+						</p>
+						<a
+							href="https://youtu.be/aLmgMjkOv7Q"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<img
 								src={essay}
 								alt="The thumbnail for Lily's Video 'Zoopraxography for Lovers (Cinema’s First Kiss Was Between Two Women)'. Sepia cutout of kissing against a background of the ocean, with text reading 'Who were they?'"
@@ -21,7 +28,14 @@ const Works = () => {
 					</div>
 
 					<div className="works__thumbnail">
-						<a href="https://youtu.be/BN2QenJZj1c">
+						<p className="works__eyecatcherTitle">
+							Avery Lake - Pop Quiz
+						</p>
+						<a
+							href="https://youtu.be/BN2QenJZj1c"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<img
 								src={directed}
 								alt="The thumbnail for Lily's music video 'Pop Quiz' for Avery Lake. A woman in a basement holding her head at a weird angle, with glitchy video effects."
@@ -30,7 +44,14 @@ const Works = () => {
 					</div>
 
 					<div className="works__thumbnail">
-						<a href="https://www.thelowerplateau.com">
+						<p className="works__eyecatcherTitle">
+							The Lower Plateau
+						</p>
+						<a
+							href="https://www.thelowerplateau.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<img
 								src={edited}
 								alt="The poster for the movie The Lower Plateau. A woman sitting glumy on a bench with a light blue background, a floating red balloon, and text reading 'The Lower Plateau'."
