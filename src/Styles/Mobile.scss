@@ -25,13 +25,40 @@
 @media screen and (max-width: 850px) {
 	.header {
 		flex-direction: column;
-		&__desktopNav {
+
+		&__desktopNav,
+		&__socialIcons {
 			display: none !important;
 		}
 
 		&__mobileNavButton {
-			display: flex;
-			margin-top: 5px;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			font-size: 2rem;
+		}
+
+		&__mobileNavCloseButton {
+			display: inline-block;
+		}
+
+		&__mobileNav {
+			position: absolute;
+			left: 0;
+			z-index: 10;
+			background-color: $olive;
+			font-size: 2rem;
+			line-height: 3rem;
+			border-radius: 8px;
+
+			.button {
+				color: $lavender;
+				margin-right: 20px;
+
+				&:hover {
+					color: $dark;
+				}
+			}
 		}
 	}
 }

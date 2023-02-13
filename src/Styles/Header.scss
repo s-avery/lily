@@ -1,5 +1,6 @@
 .header {
 	display: flex;
+	margin-top: 1.2rem;
 
 	ul {
 		list-style: none;
@@ -17,12 +18,24 @@
 		}
 	}
 
+	&__mobileNavSocials a {
+		font-size: 1.6rem;
+		margin-left: 1rem;
+		color: $white;
+
+		&:hover,
+		&:focus {
+			color: $orange;
+		}
+	}
+
 	h2 {
 		margin: 1.2rem auto 10vh auto;
 		text-align: center;
 	}
 
-	&__nav--mobileNavToggled {
-		background-color: $olive;
+	&__socialIcons {
+		font-size: 1.3rem;
+		margin-top: 0.6rem;
 	}
 }

@@ -1,3 +1,7 @@
+// !Imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -38,17 +42,18 @@ const Header = () => {
 					</ul>
 				</div>
 
-				{/* menu button for mobile */}
-				<div
-					className="header__mobileNavButton button"
-					onClick={toggleMobileNav}
-				>
-					Menu
-				</div>
-
 				{/* mobile nav */}
 				{showMobileNav ? (
+					// mobile dropdown nav
 					<div className="header__mobileNav">
+						{/* close menu button */}
+						<div
+							className="header__mobileNavCloseButton button"
+							onClick={toggleMobileNav}
+						>
+							X
+						</div>
+
 						<ul>
 							<li>
 								<Link to="/" className="button">
@@ -66,13 +71,61 @@ const Header = () => {
 								</Link>
 							</li>
 						</ul>
+
+						<div class="header__mobileNavSocials">
+							<a
+								href="https://twitter.com/lily_lxndr/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="socialsIcon"
+							>
+								<FontAwesomeIcon
+									icon={faTwitter}
+								></FontAwesomeIcon>
+							</a>
+							<a
+								href="https://www.youtube.com/@lily_lxndr"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="socialsIcon"
+							>
+								<FontAwesomeIcon
+									icon={faYoutube}
+								></FontAwesomeIcon>
+							</a>
+						</div>
 					</div>
 				) : (
-					""
+					// button to dropdown menu
+					<div
+						className="header__mobileNavButton button"
+						onClick={toggleMobileNav}
+					>
+						<FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+					</div>
 				)}
 			</nav>
 
 			<h2>Lily Alexandre</h2>
+
+			<div class="header__socialIcons">
+				<a
+					href="https://twitter.com/lily_lxndr/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="socialsIcon button"
+				>
+					<FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+				</a>
+				<a
+					href="https://www.youtube.com/@lily_lxndr"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="socialsIcon button"
+				>
+					<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+				</a>
+			</div>
 		</header>
 	);
 };
