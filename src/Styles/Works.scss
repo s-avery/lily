@@ -1,13 +1,12 @@
 .works {
-	.hits {
+	h3 {
 		text-align: center;
-		font-size: 4rem;
 	}
 
 	&__eyecatchers {
 		display: flex;
 		justify-content: space-evenly;
-		margin: 5% auto;
+		margin: 0 auto;
 	}
 
 	&__eyecatcherTitle {
@@ -42,10 +41,6 @@
 		&:focus + img {
 			transform: scale(1.1);
 		}
-	}
-
-	h2 {
-		text-align: center;
 	}
 
 	&__list {

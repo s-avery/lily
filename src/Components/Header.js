@@ -20,40 +20,10 @@ const Header = () => {
 
 	return (
 		<header className="header">
-			<nav className="header__nav">
-				{/* ul if screen big enough */}
-				<div className="header__desktopNav">
-					<ul>
-						<li>
-							<Link to="/" className="button">
-								Home
-							</Link>
-						</li>
-						<li>
-							<Link to="/Works" className="button">
-								Works
-							</Link>
-						</li>
-						<li>
-							<Link to="/Contact" className="button">
-								Contact
-							</Link>
-						</li>
-					</ul>
-				</div>
-
-				{/* mobile nav */}
-				{showMobileNav ? (
-					// mobile dropdown nav
-					<div className="header__mobileNav">
-						{/* close menu button */}
-						<div
-							className="header__mobileNavCloseButton button"
-							onClick={toggleMobileNav}
-						>
-							X
-						</div>
-
+			<div className="header__links">
+				<nav className="header__nav">
+					{/* ul if screen big enough */}
+					<div className="header__desktopNav">
 						<ul>
 							<li>
 								<Link to="/" className="button">
@@ -71,61 +41,89 @@ const Header = () => {
 								</Link>
 							</li>
 						</ul>
-
-						<div class="header__mobileNavSocials">
-							<a
-								href="https://twitter.com/lily_lxndr/"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="socialsIcon"
+					</div>
+					{/* mobile nav */}
+					{showMobileNav ? (
+						// mobile dropdown nav
+						<div className="header__mobileNav">
+							{/* close menu button */}
+							<div
+								className="header__mobileNavCloseButton button"
+								onClick={toggleMobileNav}
 							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-								></FontAwesomeIcon>
-							</a>
-							<a
-								href="https://www.youtube.com/@lily_lxndr"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="socialsIcon"
-							>
-								<FontAwesomeIcon
-									icon={faYoutube}
-								></FontAwesomeIcon>
-							</a>
+								X
+							</div>
+							<ul>
+								<li>
+									<Link to="/" className="button">
+										Home
+									</Link>
+								</li>
+								<li>
+									<Link to="/Works" className="button">
+										Works
+									</Link>
+								</li>
+								<li>
+									<Link to="/Contact" className="button">
+										Contact
+									</Link>
+								</li>
+							</ul>
+							<div class="header__mobileNavSocials">
+								<a
+									href="https://twitter.com/lily_lxndr/"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="socialsIcon"
+								>
+									<FontAwesomeIcon
+										icon={faTwitter}
+									></FontAwesomeIcon>
+								</a>
+								<a
+									href="https://www.youtube.com/@lily_lxndr"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="socialsIcon"
+								>
+									<FontAwesomeIcon
+										icon={faYoutube}
+									></FontAwesomeIcon>
+								</a>
+							</div>
 						</div>
-					</div>
-				) : (
-					// button to dropdown menu
-					<div
-						className="header__mobileNavButton button"
-						onClick={toggleMobileNav}
+					) : (
+						// button to dropdown menu
+						<div
+							className="header__mobileNavButton button"
+							onClick={toggleMobileNav}
+						>
+							<FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+						</div>
+					)}
+				</nav>
+				<div class="header__socialIcons">
+					<a
+						href="https://twitter.com/lily_lxndr/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="socialsIcon button"
 					>
-						<FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
-					</div>
-				)}
-			</nav>
+						<FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+					</a>
+					<a
+						href="https://www.youtube.com/@lily_lxndr"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="socialsIcon button"
+					>
+						<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+					</a>
+				</div>
+			</div>
 
 			<h2>Lily Alexandre</h2>
-
-			<div class="header__socialIcons">
-				<a
-					href="https://twitter.com/lily_lxndr/"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="socialsIcon button"
-				>
-					<FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
-				</a>
-				<a
-					href="https://www.youtube.com/@lily_lxndr"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="socialsIcon button"
-				>
-					<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-				</a>
-			</div>
 		</header>
 	);
 };

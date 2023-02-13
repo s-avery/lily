@@ -9,7 +9,9 @@ const Works = () => {
 			<Header />
 
 			<main className="works">
-				<h2 className="hits">The Hits</h2>
+				<h2>Works</h2>
+
+				<h3 className="hits">The Hits</h3>
 				<div className="works__eyecatchers">
 					<div className="works__thumbnail">
 						<p className="works__eyecatcherTitle">
@@ -61,10 +63,10 @@ const Works = () => {
 				</div>
 
 				<div className="works__list">
-					<h2>Selected Works</h2>
+					<h3>Selected Works</h3>
 
 					<div className="works__essays">
-						<h3>Video Essays</h3>
+						<h4>Video Essays</h4>
 						<ul>
 							<li>
 								<p>
@@ -123,7 +125,7 @@ const Works = () => {
 					</div>
 
 					<div className="works__directed">
-						<h3>Directed</h3>
+						<h4>Directed</h4>
 						<ul>
 							<li>
 								<p>
@@ -163,7 +165,7 @@ const Works = () => {
 					</div>
 
 					<div className="works__edited">
-						<h3>Edited</h3>
+						<h4>Edited</h4>
 						<ul>
 							<li>
 								<p>

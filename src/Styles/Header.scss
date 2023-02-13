@@ -1,6 +1,14 @@
 .header {
 	display: flex;
+	flex-direction: column;
 	margin-top: 1.2rem;
+	margin-bottom: 1.2rem;
+
+	&__links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 	ul {
 		list-style: none;
@@ -30,7 +38,8 @@
 	}
 
 	h2 {
-		margin: 1.2rem auto 10vh auto;
+		margin-top: -1.2rem;
+		margin-bottom: 1.2rem;
 		text-align: center;
 	}
 
