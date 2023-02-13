@@ -15,6 +15,38 @@
 		}
 	}
 
+	.works {
+		&__eyecatchers {
+			flex-direction: column;
+		}
+
+		&__thumbnail {
+			margin: 0 auto;
+			max-width: 66vw;
+			padding: auto;
+
+			p {
+				font-size: 1.6rem;
+				text-align: center;
+				line-height: 1.4rem;
+			}
+		}
+	}
+
+	.contact {
+		&__container {
+			flex-direction: column-reverse;
+		}
+
+		&__form {
+			margin: 0 auto;
+		}
+
+		&__image {
+			margin: 0 auto;
+		}
+	}
+
 	footer {
 		position: absolute;
 	}
@@ -63,4 +95,13 @@
 	}
 }
 @media screen and (max-width: 600px) {
+	.header {
+		h2 {
+			margin-top: 2rem;
+		}
+	}
+
+	.works__thumbnail p {
+		font-size: 1.2rem;
+	}
 }
