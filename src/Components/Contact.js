@@ -1,5 +1,5 @@
 import Header from "./Header";
-import placeholder from "../Assets/placeholder.png";
+import contact from "../Assets/contact.jpg";
 import { useEffect, useState } from "react";
 
 const Contact = () => {
@@ -16,7 +16,6 @@ const Contact = () => {
 
 		// toggles the "animation" class that css uses to make the form slide in
 		const googleForm = document.querySelector(".contact__googleForm");
-		console.log(googleForm);
 		googleForm.classList.toggle("contact__googleForm--animation");
 	};
 
@@ -27,7 +26,10 @@ const Contact = () => {
 				<h2>Contact</h2>
 				<div className="contact__container">
 					<div className="contact__image">
-						<img src={placeholder} alt="placeholder" />
+						<img
+							src={contact}
+							alt="Close-up of Lily Alexandre smiling. A tabby cat rubs its face against Lily's cheek, its head upside down, eyes closed, looking content."
+						/>
 					</div>
 
 					<div className="contact__form">

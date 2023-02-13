@@ -1,19 +1,28 @@
-header {
+.header {
 	display: flex;
-	// justify-content: space-between;
 
-	nav {
-		position: absolute;
+	ul {
+		list-style: none;
+		display: flex;
+		padding-left: 2%;
+	}
 
+	&__mobileNavButton {
+		display: none;
+	}
+
+	&__mobileNav {
 		ul {
-			list-style: none;
-			display: flex;
-			padding-left: 2%;
+			flex-direction: column;
 		}
 	}
 
 	h2 {
 		margin: 1.2rem auto 10vh auto;
 		text-align: center;
+	}
+
+	&__nav--mobileNavToggled {
+		background-color: $olive;
 	}
 }

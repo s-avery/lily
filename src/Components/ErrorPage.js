@@ -5,7 +5,7 @@ const ErrorPage = () => {
 				home
 			</Link>
 
-			<h1>this should not have happened.</h1>
+			<h2>this should not have happened.</h2>
 			<img src={angy} alt="angry paisley pudge" className="angy" />
 			<p className="error__text">
 				you're on a page that doesn't exist. go{" "}
