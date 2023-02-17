@@ -3,6 +3,7 @@
 		&__bio {
 			flex-direction: column-reverse;
 			max-width: 880px;
+			margin: 0 auto;
 		}
 
 		&__bioImage {
@@ -16,6 +17,9 @@
 	}
 
 	.works {
+		h2 {
+			text-align: center;
+		}
 		&__eyecatchers {
 			flex-direction: column;
 		}
@@ -46,10 +50,6 @@
 			margin: 0 auto;
 		}
 	}
-
-	footer {
-		position: absolute;
-	}
 }
 
 @media screen and (max-width: 992px) {
@@ -67,6 +67,7 @@
 			display: inline-block;
 			position: absolute;
 			left: 0;
+			top: 0;
 			font-size: 2rem;
 		}
 

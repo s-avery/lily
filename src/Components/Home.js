@@ -1,5 +1,6 @@
 import headshot from "../Assets/headshot.jpeg";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Home = () => {
 	return (
@@ -26,24 +27,9 @@ const Home = () => {
 						</p>
 					</div>
 				</div>
-
-				
 			</main>
 
-			<footer>
-				<p>
-					website by{" "}
-					<a
-						className="button"
-						href="https://sadie-avery.netlify.app/"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{" "}
-						sadie avery
-					</a>
-				</p>
-			</footer>
+			<Footer />
 		</>
 	);
 };
