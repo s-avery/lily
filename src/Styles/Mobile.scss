@@ -1,4 +1,4 @@
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 992px) {
 	.home {
 		&__bio {
 			flex-direction: column-reverse;
@@ -48,12 +48,11 @@
 
 		&__image {
 			margin: 0 auto;
+			padding-right: 0;
 		}
 	}
 }
 
-@media screen and (max-width: 992px) {
-}
 @media screen and (max-width: 850px) {
 	.header {
 		flex-direction: column;
