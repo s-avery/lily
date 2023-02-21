@@ -1,4 +1,47 @@
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 992px) {
+	.header {
+		flex-direction: column;
+
+		&__desktopNav,
+		&__socialIcons {
+			display: none !important;
+		}
+
+		&__mobileNavButton {
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-size: 2rem;
+		}
+
+		&__mobileNavCloseButton {
+			display: inline-block;
+		}
+
+		&__mobileNav {
+			position: absolute;
+			left: 0;
+			z-index: 10;
+			background-color: $olive;
+			font-size: 2rem;
+			line-height: 3rem;
+			border-radius: 8px;
+
+			.button {
+				color: $lavender;
+				margin-right: 20px;
+
+				&:hover {
+					color: $dark;
+				}
+			}
+		}
+
+		h2 {
+			margin-top: 1.2rem;
+		}
+	}
 	.home {
 		&__bio {
 			flex-direction: column-reverse;
@@ -48,57 +91,11 @@
 
 		&__image {
 			margin: 0 auto;
+			padding-right: 0;
 		}
 	}
 }
 
-@media screen and (max-width: 992px) {
-}
-@media screen and (max-width: 850px) {
-	.header {
-		flex-direction: column;
-
-		&__desktopNav,
-		&__socialIcons {
-			display: none !important;
-		}
-
-		&__mobileNavButton {
-			display: inline-block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			font-size: 2rem;
-		}
-
-		&__mobileNavCloseButton {
-			display: inline-block;
-		}
-
-		&__mobileNav {
-			position: absolute;
-			left: 0;
-			z-index: 10;
-			background-color: $olive;
-			font-size: 2rem;
-			line-height: 3rem;
-			border-radius: 8px;
-
-			.button {
-				color: $lavender;
-				margin-right: 20px;
-
-				&:hover {
-					color: $dark;
-				}
-			}
-		}
-
-		h2 {
-			margin-top: 1.2rem;
-		}
-	}
-}
 @media screen and (max-width: 600px) {
 	.header {
 		h2 {
