@@ -21,3 +21,16 @@ body {
 		background-color: $orange;
 	}
 }
+
+// *Anchor tag without decoration
+
+.noDecorationAnchor {
+	text-decoration: underline;
+	color: $olive;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		color: $olive;
+	}
+}

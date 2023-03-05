@@ -19,11 +19,20 @@ const Home = () => {
 						<h1>Lily Alexandre</h1>
 
 						<p>
-							According to all known laws of aviation, there is no
-							way that a bee should be able to fly. Its wings are
-							too small to get its fat little body off the ground.
-							The bee, of course, flies anyway because bees don't
-							care what humans think is impossible.
+							Lily Alexandre is a filmmaker and writer based in
+							Montreal. She makes video essays about art and
+							gender in the algorithm-driven era. She edits for
+							indie production company{" "}
+							<a
+								href="https://www.thelowerplateau.com/depanneur-films"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="noDecorationAnchor"
+							>
+								Depanneur Films
+							</a>
+							, including <em>Lia, 19</em> (spring 2023) and has directed
+							several music videos.
 						</p>
 					</div>
 				</div>

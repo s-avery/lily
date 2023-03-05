@@ -38,6 +38,18 @@ const Contact = () => {
 							I’ll try to get back to you within a week, but
 							sometimes take longer.
 						</p>
+						<p>
+							For sponsorship inquiries, contact{" "}
+							<a
+								href="https://talent.nebula.tv/contact/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="noDecorationAnchor"
+							>
+								Nebula Talent
+							</a>
+							.
+						</p>
 						<button className="button" onClick={handleClick}>
 							{showForm ? "Hide Form" : "Show Form"}
 						</button>
