@@ -51,6 +51,8 @@
 			&:hover,
 			&:focus {
 				text-decoration: underline;
+				text-decoration-style: wavy;
+				text-decoration-skip-ink: none;
 				color: $olive;
 			}
 		}

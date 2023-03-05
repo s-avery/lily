@@ -23,7 +23,7 @@ const Contact = () => {
 		<>
 			<Header />
 			<main className="contact">
-				<h2>Contact</h2>
+				<h1 className="contact__title">Contact</h1>
 				<div className="contact__container">
 					<div className="contact__image">
 						<img

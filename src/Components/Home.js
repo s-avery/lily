@@ -16,7 +16,7 @@ const Home = () => {
 						/>
 					</div>
 					<div className="home__about">
-						<h1>Lily Alexandre</h1>
+						<h1>About Me</h1>
 
 						<p>
 							Lily Alexandre is a filmmaker and writer based in
@@ -31,8 +31,8 @@ const Home = () => {
 							>
 								Depanneur Films
 							</a>
-							, including <em>Lia, 19</em> (spring 2023) and has directed
-							several music videos.
+							, including <em>Lia, 19</em> (spring 2023) and has
+							directed several music videos.
 						</p>
 					</div>
 				</div>

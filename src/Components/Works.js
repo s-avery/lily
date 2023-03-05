@@ -9,9 +9,9 @@ const Works = () => {
 			<Header />
 
 			<main className="works">
-				<h2>Works</h2>
+				<h1 className="works__title">Works</h1>
 
-				<h3 className="hits">The Hits</h3>
+				<h3 className="works__hits">The Hits</h3>
 				<div className="works__eyecatchers">
 					<div className="works__thumbnail">
 						<p className="works__eyecatcherTitle">

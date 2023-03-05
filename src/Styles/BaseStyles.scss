@@ -26,11 +26,14 @@ body {
 
 .noDecorationAnchor {
 	text-decoration: underline;
+	text-decoration-style: solid;
+
 	color: $olive;
 
 	&:hover,
 	&:focus {
 		text-decoration: underline;
+		text-decoration-style: wavy;
 		color: $olive;
 	}
 }
